@@ -19,7 +19,7 @@ public class OvalPainter implements Painter {
 
     @Override
     public void paint(Graphics graphics, int last, int lastY, Color lastColor) {
-        graphics.setColor(color);
+        graphics.setColor(lastColor);
         graphics.fillOval(last, lastY, width, height);
     }
 }
